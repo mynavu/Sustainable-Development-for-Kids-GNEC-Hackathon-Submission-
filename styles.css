@@ -1,0 +1,794 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+    background-color: #00aeef;
+}
+
+nav {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+margin-left: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between; /* Adds space between each li */
+  align-items: center;
+  list-style: none;
+  width: 100%; /* Makes ul take full width to distribute li elements */
+  max-width: 800px; /* Optional: Set a max width for control */
+  padding: 0 20px; /* Optional: Add padding to control space */
+  margin-left: 100px;
+}
+
+li {
+  display: block;
+}
+
+a {
+ text-decoration: none;
+ display: block;
+ transition: transform 0.3s ease;
+}
+
+a:hover {
+ transform: scale(1.2);
+}
+
+.item:hover {
+    transform: scale(1.2);
+
+}
+
+.logoimg {
+  width: 70px;
+  height: 70px;
+  margin-left: 20px; /* Adds space between img and ul */
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.blue {
+    color: #00aeef;
+}
+
+.white {
+    color: #ffffff;
+}
+
+
+.one {
+    margin-top: 250px;
+    margin-left: 100px;
+}
+
+.two {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.intro {
+  width: 100%;
+  height: 700px;
+  background-color: #00aeef;
+  overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    height: 90px;
+    width: auto;
+    transform: rotate(-20deg);
+}
+
+.plant1 {
+    position: absolute;
+    top: 550px;
+    left: 500px;
+    height: 100px;
+    width: auto;
+}
+
+.smile {
+    position: absolute;
+    top: 550px;
+    left: 50px;
+    height: 100px;
+    width: auto;
+}
+
+.rainbow {
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    height: 100px;
+    width: auto;
+}
+
+.anyage {
+    position: absolute;
+    top: 410px;
+    left: 180px;
+    height: 70px;
+    width: auto;
+}
+
+.gallery {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    overflow: hidden; /* Hide images that aren't active */
+    right: 0px;
+}
+
+.gallery-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade */
+}
+
+.gallery-img.active {
+    opacity: 1; /* Show the active image */
+}
+
+.action {
+    background-color: white;
+    width: 100%;
+    height: 400px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+
+.mid {
+    position: relative;
+    text-align: center;
+    line-height: 2;
+}
+
+.middle {
+    text-align: center;
+
+}
+
+.line-height {
+    line-height: 2;
+}
+
+.left {
+    position: relative;
+    margin-top: 20px;
+    line-height: 2;
+    margin-left: 50px;
+
+}
+
+.three {
+    margin-top: 20px;
+    line-height: 2;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+
+
+.three * {
+    display: inline;
+}
+
+
+
+.buttons {
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly; /* Adds space between each li */
+
+}
+
+.spacing {
+    padding: 20px;
+}
+
+.margin-15px {
+    margin-top: 15px;
+}
+
+.average {
+    display: flex;
+    height: 120px;
+    width: auto;
+
+}
+
+.about-header {
+    height:200px;
+    width: auto;
+    margin-left: 50px;
+    margin-top: 20px
+}
+
+.donate-header {
+    width: 500px;
+    height: auto;
+    margin-left: calc(50% - 250px);
+    margin-top: 30px;
+}
+
+.clouds1 {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+}
+
+.clouds2 {
+    height: 150px;
+    width: auto;
+    position: absolute;
+    top: 200px;
+    right: 150px;
+}
+
+.bigger {
+    height: 150px;
+    width: auto;
+    display: flex;
+
+}
+
+.about {
+    margin-top: 50px;
+    height: 100px !important;
+    width: auto;
+    margin-left: 50px;
+    margin-right: 900px;
+}
+
+.divider {
+    width: 100%;
+    height: 100px;
+    background-color: white;
+
+}
+
+footer {
+    width: 100%;
+    height: 110px;
+
+}
+
+.footer-blue {
+    background-color: #00aeef;
+}
+
+.footer-white {
+    background-color: white;
+}
+
+.goal-img {
+    height: 300px;
+    width: auto;
+    position: absolute;
+    margin-left: 50px;
+    opacity: 0; /* Start hidden */
+    transition: opacity 1s ease-in-out; /* Smooth fade */
+    z-index: 0;
+    border-radius: 20px;
+}
+
+.goal-img.active {
+    opacity: 1; /* Show the active image */
+    z-index: 1;
+}
+
+
+
+.explanation {
+    position: absolute;
+    margin-left: 400px;
+    display: inline-block; /* Allows inline content but respects child elements' styles */
+    font-size: 18px;
+}
+
+.explanation * {
+    display: inline; /* Makes all child elements inline */
+}
+
+.link {
+    color: #0063cc
+}
+
+.goal-container {
+    margin-top: 500px;
+    margin-right: 80px;
+    /* background-color: red; */
+    position: relative;
+    height: 500px;
+}
+
+.arrow {
+    position: absolute;
+    height: 190px;
+    top: 720px;
+    left: 475px;
+    z-index: -1;
+    transform: rotate(-10deg);
+
+
+}
+
+.button1 {
+  background-color: white;
+  border: none;
+  margin: 3px;
+  color: #00aeef;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.space-top {
+    margin-top: 20px;
+}
+
+#button2 {
+    margin-top: 320px;
+    margin-left: 150px;
+}
+
+
+.globe {
+    position: absolute;
+    height: 800px;
+    width: auto;
+    top: 100px;
+    right: 0px;
+    animation-name: spin;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+@keyframes spin {
+0% {
+   transform: rotate(0deg);
+ }
+100% {
+    transform: rotate(360deg);
+}
+}
+
+.max {
+    overflow-x: hidden
+}
+
+.cause {
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.cause img {
+    width: 250px;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+    border-radius: 10px 10px 0 0;
+
+}
+
+.cause h3 {
+    text-align: center;
+    margin-left: 0px;
+    margin-top: 8px
+
+}
+
+
+.donate-gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  margin-bottom: 100px;
+}
+
+.gradient {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(#00aeef 0%, white 20%, white 80%, #00aeef 100%);
+
+}
+
+.games-header {
+    width: 500px;
+    height: auto;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 250px);
+}
+
+.handprint {
+    position: absolute;
+    height: 200px;
+    width: auto;
+    top: 200px;
+    right: 100px;
+    transform: rotate(15deg);
+}
+
+.game-word {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.memory-card {
+    width: 100%;
+    height: 650px;
+    text-align: center;
+
+
+}
+
+#board {
+    height: 600px;
+    width: 597px;
+    margin: 0 auto;
+    background: conic-gradient(#C5192D 0%, #E5233D 6%, #EF402C 12%, #F26A2D 18%, #BF8D2C 24%, #DDA73A 30%, #F89D2A 36%, #FBC412 42%, #59BA48 48%, #4CA146 56%, #407F46 62%, #27BFE6 68%, #1F97D4 74%, #126A9F 80%, #13496B 86%, #E01483 92%, #A31C44 100%);;
+    border: 10px solid white;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 90px;
+    width: 90px;
+    margin: 3px;
+}
+
+.start-screen {
+    height: 650px;
+    width: 597px;
+    left: calc(50% - 298.5px);
+    margin-top: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+#button3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); //shifts the button up and left by half its own width and height, effectively centering it on that midpoint.
+    z-index: 4;
+}
+
+.button2 {
+  background-color: #00aeef;
+  border: none;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.description {
+    width: 100%;
+    height: 160px;
+}
+
+#description1 {
+    width: 950px;
+    position: absolute;
+}
+
+.four {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 120px;
+
+}
+
+.johnnys-room {
+    height: 620px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 30px 30px 30px 30px;
+}
+
+.highest {
+    height: 830px !important;
+}
+
+.higher {
+    height: 800px !important;
+}
+
+.high {
+    height: 750px !important;
+
+}
+
+.wallpaper {
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.bed {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 100px;
+}
+
+.poster {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    margin-top: 150px;
+    margin-left: 400px;
+}
+
+#window {
+    position: absolute;
+    width: 250px;
+    height: auto;
+    margin-top: 100px;
+    margin-left: 600px;
+    cursor: pointer;
+}
+
+.chair {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 400px;
+}
+
+#peace {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    margin-top: 190px;
+    margin-left: 430px;
+    cursor: pointer;
+}
+
+.johnny {
+    position: absolute;
+    width: 130px;
+    height: auto;
+    margin-top: 250px;
+    margin-left: 400px;
+
+}
+
+.table {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    margin-top: 400px;
+    margin-left: 280px;
+}
+
+#crutches {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    margin-top: 370px;
+    margin-left: 90px;
+    cursor: pointer;
+}
+
+#fishtank {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    margin-top: 300px;
+    margin-left: 700px;
+    cursor: pointer;
+}
+
+#plant {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-top: 400px;
+    margin-left: 800px;
+    cursor: pointer;
+}
+
+#bin {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    margin-top: 450px;
+    margin-left: 60px;
+    cursor: pointer;
+}
+
+#book {
+    position: absolute;
+    width: 60px;
+    height: auto;
+    margin-top: 360px;
+    margin-left: 220px;
+    cursor: pointer;
+}
+
+#piggybank {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    margin-top: 380px;
+    margin-left: 170px;
+    cursor: pointer;
+}
+
+#computer {
+    position: absolute;
+    width: 80px;
+    height: auto;
+    margin-top: 460px;
+    margin-left: 130px;
+    cursor: pointer;
+}
+
+#soup {
+    position: absolute;
+    width: 50px;
+    height: auto;
+    margin-top: 360px;
+    margin-left: 460px;
+    cursor: pointer;
+}
+
+#apple {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    margin-top: 370px;
+    margin-left: 560px;
+    cursor: pointer;
+}
+
+#water {
+    position: absolute;
+    width: 30px;
+    height: auto;
+    margin-top: 360px;
+    margin-left: 530px;
+    cursor: pointer;
+
+}
+
+#light {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    margin-top: 290px;
+    margin-left: 620px;
+    cursor: pointer;
+}
+
+#globe1 {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    margin-top: 260px;
+    margin-left: 300px;
+    cursor: pointer;
+}
+
+#sarah {
+    position: absolute;
+    width: 100px;
+    height: auto;
+    margin-top: 360px;
+    margin-left: 870px;
+    cursor: pointer;
+}
+
+.johnny-text {
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 25px;
+    z-index: 6;
+}
+
+.app {
+    width: 900px;
+    height: 100%;
+    margin: 0 auto 100px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+
+.btn {
+    background: white;
+    color: #00aeef;
+    width: 100%;
+    border: 2px solid #00aeef;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn:hover:not([disabled]) {
+    background: #00aeef;
+    color: white;
+}
+
+
+
+#question {
+    margin-bottom: 20px;
+}
+
+#next-btn {
+    background: #00aeef;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+.correct {
+    background: #9fff96;
+}
+
+.incorrect {
+    background: #ffc1bd;
+
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SDGs Goals for Kids</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+24&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+    </div>
+    <nav>
+        <img class="logoimg" src="https://static.wixstatic.com/media/a3826a_9c4a5fa60e76435ab7237fbae0355789~mv2.png/v1/crop/x_57,y_0,w_986,h_974/fill/w_986,h_973,al_c,q_90,enc_auto/a3826a_9c4a5fa60e76435ab7237fbae0355789~mv2.png">
+        <h1 class="roboto-bold logo blue">Sustainable Development for Kids</h1>
+        <ul>
+            <li><a href="index.html"><h3 class="roboto-bold blue">Home</h3></a></li>
+            <li><a href="about.html"><h3 class="roboto-bold blue">About</h3></a></li>
+            <li><a href="games.html"><h3 class="roboto-bold blue">Games</h3></a></li>
+            <li><a href="donate.html"><h3 class="roboto-bold blue">Donate</h3></a></li>
+        </ul>
+    </nav>
+    <div class="gradient"></div>
+    <img class="games-header" src="https://static.wixstatic.com/media/a3826a_31a34282a9b948229475a22d44233e29~mv2.png/v1/crop/x_0,y_9,w_1432,h_632/fill/w_1002,h_442,al_c,q_90,usm_0.66_1.00_0.01,enc_auto/a3826a_31a34282a9b948229475a22d44233e29~mv2.png">
+    <h3 class="roboto-bold white line-height game-word"> Below are games crafted to inspire young minds about the 17 Sustainable Development Goals (SDGs) in engaging and entertaining ways! These games explore essential global issues like clean water, affordable energy, and climate action, offering kids a chance to learn through interactive challenges and fun activities. Each game is designed to test their skills, nurture curiosity, and encourage critical thinking about the world around them. Explore an exciting mix of puzzles, quizzes, and skill-building games that make learning about sustainable development an adventure. Dive in and discover how fun it is to make a difference!
+    </h3>
+    <div class="description">
+        <h1 class="roboto-bold white four">1. Memory Cards 🃏</h1>
+        <h3 class="roboto-bold white line-height game-word margin-15px"> Start with 2 seconds to memorize the position of 36 cards. Then, try and guess where all the matching pairs are. This game tests your memory. Try to get the least amount of errors as possible, and have fun!  </h3>
+    </div>
+    <div class="memory-card">
+        <div class="start-screen">
+            <button class="roboto-bold button2" id="button3">Start Game</button>
+        </div>
+        <h2 class="roboto-bold white" >Errors: <span id="errors"> 0 </span></h2>
+        <div id="board"></div>
+    </div>
+    <div class="description">
+        <h1 class="roboto-bold white four">2. Johnny's Room 🏡</h1>
+        <h3 class="roboto-bold white line-height game-word margin-15px"> Johnny is a 10-year-old boy living in 21st-century America. Click around his room to learn about his lifestyle and how different it is from someone from an underdeveloped country. You might be shocked at how living conditions contrast for someone from the opposite side of the globe.</h3>
+    </div>
+    <div class="johnnys-room">
+        <h3 class="roboto-bold blue johnny-text">Selected: <span id="item">None (press something in Johnny's room)</span> <br><br> <span id="description1" class="line-height"></span></h3>
+        <img class="wallpaper" src="https://static.wixstatic.com/media/a3826a_b159b86382334548ae5fe3ddeb13b868~mv2.jpg/v1/fill/w_751,h_416,al_c,lg_1,q_80,enc_auto/a3826a_b159b86382334548ae5fe3ddeb13b868~mv2.jpg">
+        <img class="bed" src="https://static.wixstatic.com/media/a3826a_9ab523ed51c3402abc1e83c3340c9525~mv2.png/v1/fill/w_260,h_260,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pixel-art-bed-bedroom_150088-1761-remove.png">
+        <img class="poster" src="https://static.wixstatic.com/media/a3826a_36915d2f237848529b7f66235a9489fd~mv2.png/v1/fill/w_176,h_176,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_36915d2f237848529b7f66235a9489fd~mv2.png">
+        <img class="item" id="window" data-name="Window" src="https://static.wixstatic.com/media/a3826a_a8483497f0ce4b47bc16939876d522e9~mv2.png/v1/crop/x_70,y_260,w_860,h_610/fill/w_390,h_278,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_a8483497f0ce4b47bc16939876d522e9~mv2.png">
+        <img class="chair" src="https://static.wixstatic.com/media/a3826a_36f31e6bcbb44fe48006760edd037d9a~mv2.png/v1/fill/w_200,h_302,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_36f31e6bcbb44fe48006760edd037d9a~mv2.png">
+        <img class="item" id="peace" data-name="Peace poster" src="https://static.wixstatic.com/media/a3826a_3b1a4f34a596427b805040a3972a4135~mv2.png/v1/crop/x_39,y_39,w_181,h_181/fill/w_86,h_86,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_3b1a4f34a596427b805040a3972a4135~mv2.png">
+        <img class="johnny" src="https://static.wixstatic.com/media/a3826a_c010046b8cac4bd8839cfffd1ae6bfcb~mv2.png/v1/crop/x_316,y_135,w_534,h_927/fill/w_170,h_296,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_c010046b8cac4bd8839cfffd1ae6bfcb~mv2.png">
+        <img class="table" src="https://static.wixstatic.com/media/a3826a_64c29d247c0f41ddaa817d6198c51e93~mv2.png/v1/fill/w_512,h_182,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_64c29d247c0f41ddaa817d6198c51e93~mv2.png">
+        <img class="item" id="crutches" data-name="Crutches" src="https://static.wixstatic.com/media/a3826a_761a3e4840ad457bae89c20cea3b6282~mv2.png/v1/crop/x_146,y_37,w_187,h_404/fill/w_68,h_154,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_761a3e4840ad457bae89c20cea3b6282~mv2.png">
+        <img class="item" id="fishtank" data-name="Fish tank" src="https://static.wixstatic.com/media/a3826a_704be58abf3d444a8b731fef746a314a~mv2.png/v1/crop/x_82,y_16,w_197,h_268/fill/w_142,h_194,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pngtree-aquarium-with-gold-fish-vector-p.png">
+        <img class="item" id="plant" data-name="Plant" src="https://static.wixstatic.com/media/a3826a_cb2258c4aeb741e2ae7f7ac98f37c9fd~mv2.png/v1/crop/x_56,y_7,w_240,h_353/fill/w_68,h_100,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_cb2258c4aeb741e2ae7f7ac98f37c9fd~mv2.png">
+        <img class="item" id="bin" data-name="Bin" src="https://static.wixstatic.com/media/a3826a_3c41dbd64ccd49afb5706fc3ea905ce4~mv2.png/v1/crop/x_277,y_79,w_123,h_140/fill/w_76,h_86,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_3c41dbd64ccd49afb5706fc3ea905ce4~mv2.png">
+        <img class="item" id="book" data-name="Books" src="https://static.wixstatic.com/media/a3826a_b88fb24d2ec24cfe9f6fd96a549551bf~mv2.png/v1/crop/x_128,y_136,w_247,h_226/fill/w_62,h_54,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_b88fb24d2ec24cfe9f6fd96a549551bf~mv2.png">
+        <img class="item" id="piggybank" data-name="Piggy bank" src="https://static.wixstatic.com/media/a3826a_7a3692d09dca40d5a985a6557db1ae47~mv2.png/v1/crop/x_163,y_193,w_315,h_258/fill/w_42,h_40,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_7a3692d09dca40d5a985a6557db1ae47~mv2.png">
+        <img class="item" id="computer" data-name="Computer" src="https://static.wixstatic.com/media/a3826a_965b9334500940e1bac499cb9fd92174~mv2.png/v1/fill/w_102,h_86,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_965b9334500940e1bac499cb9fd92174~mv2.png">
+        <img class="item" id="soup" data-name="Soup" src="https://static.wixstatic.com/media/a3826a_70a6808da92a4c2b83e17848a3375ddf~mv2.png/v1/crop/x_145,y_193,w_200,h_189/fill/w_76,h_72,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_70a6808da92a4c2b83e17848a3375ddf~mv2.png">
+        <img class="item" id="apple" data-name="Apple" src="https://static.wixstatic.com/media/a3826a_fa0be6cbb73e42caac11f191094c73a2~mv2.png/v1/crop/x_5,y_115,w_95,h_116/fill/w_42,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_fa0be6cbb73e42caac11f191094c73a2~mv2.png">
+        <img class="item" id="water" data-name="Cup of water" src="https://static.wixstatic.com/media/a3826a_7cfd1a68b525483aa6c58fcc6269f840~mv2.png/v1/fill/w_32,h_46,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_7cfd1a68b525483aa6c58fcc6269f840~mv2.png">
+        <img class="item" id="light" data-name="Lamp" src="https://static.wixstatic.com/media/a3826a_46d7fce04010433682382c9193a1df89~mv2.webp/v1/fill/w_56,h_164,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/a3826a_46d7fce04010433682382c9193a1df89~mv2.webp">
+        <img class="item" id="globe1" data-name="Globe" src="https://static.wixstatic.com/media/a3826a_f64b4d7a741345699c974fdf02186764~mv2.png/v1/fill/w_114,h_164,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/a3826a_f64b4d7a741345699c974fdf02186764~mv2.png">
+        <img class="item" id="sarah" data-name="Sarah" src="https://static.wixstatic.com/media/a3826a_4beea532a2e843838a08c520ac51c1c2~mv2.png/v1/crop/x_313,y_117,w_574,h_978/fill/w_142,h_246,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/pngtree-pixel-art-character-golden-hair-.png">
+    </div>
+    <h3 class="roboto-bold white line-height game-word margin-15px"> After exploring Johnny's room, you might want to take this opportunity to reflect on what you just learned. Maybe research the goal attached to it or find other ways to help. Johnny is trying his best, and he encourages others to join him to make this world a better place for everyone! </h3>
+    <div class="description">
+        <h1 class="roboto-bold white four">3. Mini Quiz 📝</h1>
+        <h3 class="roboto-bold white line-height game-word margin-15px"> This is a mini quiz that tests what you have learned from this website. There are 10 questions total. </h3>
+    </div>
+    <div class="app">
+        <div class="quiz">
+            <h2 class="roboto-bold blue" id="question">Questions</h2>
+            <div id="answer-buttons">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+            <button class="roboto-bold white" id="next-btn">Next</button>
+        </div>
+
+    </div>
+    <footer class="footer-white">
+        <h4 class="roboto-bold blue mid spacing"> Created by Myna Vu for the GNEC Hackathon <br> Note: This is not officially affiliated with the UN </h4>
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+
+</body>
+</html>
